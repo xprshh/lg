@@ -1,8 +1,8 @@
-{lib, ...}:
+{ lib, ... }:
 with lib.hm.gvariant; {
   dconf.settings = {
     "org/gnome/desktop/input-sources" = {
-      sources = [(mkTuple ["xkb" "hu"])];
+      sources = [(mkTuple ["xkb" "us"])];
       xkb-options = ["terminate:ctrl_alt_bksp"];
     };
 
@@ -123,7 +123,8 @@ with lib.hm.gvariant; {
     };
 
     "system/locale" = {
-      region = "hu_HU.UTF-8";
+      region = "hu_HU.UTF-8";  # Set the locale to Hungarian
+      timezone = "America/New_York";  # Set the timezone to New York (Eastern Time)
     };
 
     "org/virt-manager/virt-manager/connections" = {
