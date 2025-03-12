@@ -58,6 +58,7 @@ in {
         ../home-manager/tmux.nix
         ../home-manager/wezterm.nix
         ../home-manager/neofetch.nix
+        ../home-manager/mimelist.nix
         ./home.nix
       ];
     };
