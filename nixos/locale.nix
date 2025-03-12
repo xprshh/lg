@@ -15,5 +15,5 @@
   };
 
   console.useXkbConfig = true;
-  services.xserver.xkb.layout = "hu";
+  services.xserver.xkb.layout = "us";
 }
