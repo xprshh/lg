@@ -2,7 +2,7 @@ let
   browser = "firefox.desktop";
   file-manager = "org.gnome.Nautilus.desktop";
   image-viewer = "org.gnome.Loupe.desktop";
-  torrent = "transmission-gtk.desktop";
+  torrent = "fragments.desktop";
 in {
   xdg.mimeApps = rec {
     enable = true;
