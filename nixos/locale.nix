@@ -1,7 +1,7 @@
 {
   time.timeZone = "America/New_York";
 
-  i18n.defaultLocale = "hu_HU.UTF-8";
+i18n.defaultLocale = "en_US.UTF-8";   
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "hu_HU.UTF-8";
     LC_IDENTIFICATION = "hu_HU.UTF-8";
