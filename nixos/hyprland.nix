@@ -45,7 +45,6 @@
     meson
     gcc
     pkg-config
-    make
     cmake
     clang-tools
     clang
