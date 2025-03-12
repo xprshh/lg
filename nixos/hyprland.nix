@@ -44,12 +44,13 @@
       adwaita-icon-theme
       qogir-icon-theme
       loupe
+      obsidian
+      obs-studio
+      blueberry
       nautilus
-      baobab
       gnome-text-editor
       gnome-calendar
       gnome-boxes
-      gnome-system-monitor
       gnome-control-center
       gnome-weather
       gnome-calculator
