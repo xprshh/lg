@@ -33,7 +33,6 @@
   boot.kernel.sysctl = {
     "vm.laptop_mode" = 10;
     "vm.dirty_writeback_centisecs" = 3000;
-    "kernel.nmi_watchdog" = 0;
   };
 
   services.xserver.enable = true;
