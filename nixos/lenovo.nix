@@ -21,8 +21,6 @@
   # Enable Bluetooth
   hardware.bluetooth.enable = true;
 
-  # Disable printing services
-  services.printing.enable = false;
 
   # Enable periodic trimming of unused disk blocks
   services.fstrim.enable = true;
