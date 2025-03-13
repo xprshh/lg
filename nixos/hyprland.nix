@@ -40,14 +40,6 @@
 
     environment.systemPackages = with pkgs;
     with gnome; [
-    gtk3
-    gtk4
-    meson
-    gcc
-    pkg-config
-    cmake
-    clang-tools
-    clang
       morewaita-icon-theme
       adwaita-icon-theme
       qogir-icon-theme
