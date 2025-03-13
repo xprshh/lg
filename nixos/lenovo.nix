@@ -36,7 +36,6 @@
   services.xserver.videoDrivers = [ "intel" ];
   boot.kernelParams = [ "i915.enable_fbc=1" "i915.enable_psr=1" "i915.enable_rc6=7" ];
   
-  services.thermald.enable = true;
   
   # Install power-saving utilities
   environment.systemPackages = with pkgs; [
