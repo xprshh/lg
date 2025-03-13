@@ -1,8 +1,13 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
+
 {
-  # Enable extreme power-saving mode
+  options.lenovo = {
+    enable = lib.mkEnableOption "Lenovo Laptop + Battery Life Omp";
+  };
+
   services.thermald.enable = true;
-  # don't ask me about kernel stuff  
+
+  # Don't ask about kernel stuff  
   boot.kernelParams = [
     "intel_pstate=passive"
     "pcie_aspm=force"
@@ -14,30 +19,34 @@
     "rcu_nocbs=0-$(nproc)"
     "nmi_watchdog=0"
   ];
-  
+
   hardware.bluetooth.enable = true;
-  
+
+  # Disable printing services
   services.printing.enable = false;
+
   services.fstrim.enable = true;
-  
-  systemd.sleep.extraConfig = "
+
+  systemd.sleep.extraConfig = ''
     SuspendState=mem
     HibernateState=disk
-  ";
-  
+  '';
+
   boot.kernel.sysctl = {
     "vm.laptop_mode" = 10;
     "vm.dirty_writeback_centisecs" = 3000;
     "kernel.nmi_watchdog" = 0;
   };
-  
-  services.xserver.enable = true;
-  services.xserver.windowManager.hyprland.enable = true;
+
   services.xserver.videoDrivers = [ "intel" ];
-  boot.kernelParams = [ "i915.enable_fbc=1" "i915.enable_psr=1" "i915.enable_rc6=7" ];
   
-  
-  # Install power-saving utilities
+  # Intel-specific power-saving options
+  boot.kernelParams = [
+    "i915.enable_fbc=1"
+    "i915.enable_psr=1"
+    "i915.enable_rc6=7"
+  ];
+
   environment.systemPackages = with pkgs; [
     powertop
     acpi
@@ -46,4 +55,7 @@
     wayland-utils
     lm_sensors
   ];
+
+  # Enable Lenovo battery optimization features
+  lenovo.enable = true;
 }
