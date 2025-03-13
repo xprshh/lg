@@ -8,7 +8,7 @@
   };
 
   # camera
-  programs.droidcam.enable = true;
+  programs.droidcam.enable = false;
 
   # virtualisation
   programs.virt-manager.enable = true;
