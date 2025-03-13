@@ -7,6 +7,8 @@
 in {
   imports = [
     /etc/nixos/hardware-configuration.nix
+    ./sysctl/default.nix
+    ./sysctl/performace.nix
     ./system.nix
     ./audio.nix
     ./locale.nix
