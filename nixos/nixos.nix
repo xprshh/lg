@@ -14,6 +14,7 @@ in {
     ./laptop.nix
     ./hyprland.nix
     ./gnome.nix
+    ./lenovo.nix
   ];
 
   hyprland.enable = true;
