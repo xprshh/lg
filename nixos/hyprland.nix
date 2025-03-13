@@ -62,7 +62,6 @@
       pavucontrol
       brightnessctl
       swww
-      gnome-builder
     ];
 
     systemd = {
