@@ -1,10 +1,6 @@
 { config, pkgs, lib, ... }:
 
 {
-  options.lenovo = {
-    enable = lib.mkEnableOption "Lenovo Laptop + Battery Life Omp";
-  };
-
   services.thermald.enable = true;
 
   boot.kernelParams = [
@@ -22,6 +18,7 @@
     "i915.enable_rc6=7"
   ];
 
+  # Enable Bluetooth
   hardware.bluetooth.enable = true;
 
   # Disable printing services
@@ -41,6 +38,7 @@
     "kernel.nmi_watchdog" = 0;
   };
 
+  services.xserver.enable = true;
   services.xserver.videoDrivers = [ "intel" ];
 
   # Install power-saving utilities
@@ -52,6 +50,11 @@
     wayland-utils
     lm_sensors
   ];
+
+  # Example:
+  # lenovo = {
+  #   enable = true;
+  # };
 
 }
 
