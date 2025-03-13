@@ -121,7 +121,8 @@ in {
           ",XF86Launch4,   ${e} -r 'recorder.start()'"
           ",Print,         ${e} -r 'recorder.screenshot()'"
           "SHIFT,Print,    ${e} -r 'recorder.screenshot(true)'"
-          "SUPER, Return, exec, xterm" # xterm is a symlink, not actually xterm
+          "SUPER, Return, exec, wezterm" # xterm is a symlink, not actually xterm
+          "ALT, Return, exec, wezterm:
           "SUPER, W, exec, firefox"
           "SUPER, E, exec, wezterm -e lf"
 
@@ -239,3 +240,4 @@ in {
     };
   };
 }
+
