@@ -27,6 +27,7 @@
     neovim
     git
     wget
+    coreutils
   ];
 
   # services
