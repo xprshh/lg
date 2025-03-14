@@ -5,7 +5,7 @@
     ./scripts/nx-switch.nix
     ./scripts/nx-clean.nix
     ./scripts/vault.nix
-    ./scripts/fetch.nix
+    ./scripts/ufetch.nix
   ];
 
   packages = with pkgs; {
