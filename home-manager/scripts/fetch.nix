@@ -1,4 +1,4 @@
-pkgs, ...}: let
+{ pkgs, ...}: let
   fetch = pkgs.writeShellScriptBin "fetch" ''
    #!/bin/sh
 #
