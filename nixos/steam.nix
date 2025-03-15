@@ -1,6 +1,13 @@
-{ config, ... }: {
+{ config, lib, pkgs, ... }:
+
+{
   programs.steam = {
-    enable = true; # I use Steam for light gaming but will get a gaming laptop in the future for heavy gaming
-    gamescopeSession.enable = config.programs.gamescope.enable;
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+    localNetworkGameTransfers.openFirewall = true;
   };
+
+  # Xbox dongle support
+  hardware.xone.enable = true;
 }
