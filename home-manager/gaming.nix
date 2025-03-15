@@ -3,8 +3,8 @@
 {
   # Home packages to install
   home.packages = with pkgs; [
-    ppsspp
     bottles
+    heroic
     mangohud
     goverlay
     gamemode
