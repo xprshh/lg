@@ -7,6 +7,10 @@
     auto-optimise-store = true;
   };
 
+  # xbox controller
+  hardware.xone.enable = true;
+  hardware.xpadneo.enable = true;
+
   # camera
   programs.droidcam.enable = false;
 
