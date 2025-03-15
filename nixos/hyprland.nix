@@ -63,6 +63,7 @@
       brightnessctl
       swww
       vscode-fhs
+      thunderbird
     ];
 
     systemd = {
