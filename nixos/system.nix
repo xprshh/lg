@@ -60,6 +60,8 @@
   # network
   networking.networkmanager.enable = true;
 
+  programs.gamemode.enable = true;
+
   # bluetooth
   hardware.bluetooth = {
     enable = true;

@@ -13,8 +13,6 @@
     protontricks
   ];
 
-  # Enabling Gamemode for performance optimizations
-  programs.gamemode.enable = true;
 
   # Custom module imports
   imports = [
