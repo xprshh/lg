@@ -40,6 +40,7 @@ in {
       exec-once = [
         "ags -b hypr"
         "hyprctl setcursor Qogir 24"
+        "hyprctl keyword monitor HDMI-A-1, 1920x1080@120, 0x0, 1"
       ];
 
       monitor = [
