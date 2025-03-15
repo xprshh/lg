@@ -62,7 +62,6 @@
       pavucontrol
       brightnessctl
       swww
-      adwsteamgtk
     ];
 
     systemd = {
@@ -134,3 +133,4 @@
       builtins.readFile wp;
   };
 }
+
