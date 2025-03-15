@@ -4,9 +4,9 @@
     settings = {
       preset = "-1";
 
-      font_file = "${pkgs.ubuntu_nerd_font}/share/fonts/ttf/Ubuntu-Nerd-Font-Regular.ttf";
+      font_file = "${pkgs.iosevka}/share/fonts/truetype/Iosevka-Bold.ttf";
       font_size = 24;
-      round_corners = 6.0;
+      round_corners = 10.0;
 
       gpu_temp = true;
       cpu_temp = true;
