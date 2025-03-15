@@ -60,6 +60,7 @@ in {
         ../home-manager/neofetch.nix
         ../home-manager/mimelist.nix
         ../home-manager/helix.nix
+        ../home-manager/gaming.nix
         ./home.nix
       ];
     };

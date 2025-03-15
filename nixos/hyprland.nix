@@ -62,8 +62,6 @@
       pavucontrol
       brightnessctl
       swww
-      vscode-fhs
-      thunderbird
     ];
 
     systemd = {

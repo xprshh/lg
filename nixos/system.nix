@@ -13,9 +13,9 @@
   # virtualisation
   programs.virt-manager.enable = true;
   virtualisation = {
-    podman.enable = true;
-    docker.enable = true;
-    libvirtd.enable = true;
+    podman.enable = false;
+    docker.enable = false;
+    libvirtd.enable = false;
   };
 
   # dconf
@@ -27,7 +27,6 @@
     neovim
     git
     wget
-    coreutils
   ];
 
   # services
